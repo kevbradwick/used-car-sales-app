@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "used-car-sales-app"
+version = "0.1.0"
+description = ""
+authors = ["Kevin Bradwick <kevinbradwick@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scikit-learn = "^1.2.0"
+pandas = "^1.5.2"
+flask = "^2.2.2"
+skops = "^0.4.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
