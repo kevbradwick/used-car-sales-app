@@ -10,3 +10,11 @@ dev:
 .PHONY: model
 model:
 	poetry run python scripts/build_model.py
+
+.PHONY: image
+image:
+	docker build -t kevbradwick/user-car-sales-app:latest .
+
+.PHONY: docker-push
+docker-push:
+	docker push kevbradwick/user-car-sales-app:latest

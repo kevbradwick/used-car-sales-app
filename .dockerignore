@@ -4,3 +4,6 @@
 .gitignore
 README.md
 Makefile
+scripts/
+*.py[cod]
+__pycache__
